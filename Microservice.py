@@ -13,7 +13,7 @@ def WriteToTextFile(file, number):
 
 def ListenToTextFile(file, content):
     while True:
-        time.sleep(5)   # leave this sleep in to avoid permission errors
+        time.sleep(2)   # leave this sleep in to avoid permission errors
                         # (from both files trying to read/write at the same time)
         with open(file, "r") as file_opened:
             read_text = file_opened.read()
