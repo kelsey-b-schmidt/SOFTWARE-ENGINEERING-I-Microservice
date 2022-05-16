@@ -9,7 +9,8 @@ def WriteToTextFile(file, number):
     limit = int(number)
     words = r.get_random_words(limit=number)
     with open(file, "w") as file_opened:
-        file_opened.write(str(words))
+        for word in words:
+            file_opened.write(word+" ")
 
 def ListenToTextFile(file, content):
     while True:

@@ -35,7 +35,7 @@ if __name__ == "__main__":
             print("\nStopping MainProgram - Thanks for playing!")
             break
         WriteToTextFile(text_file, "")
-        print("Now you can do other things with this list:\n"+ received_text)
+        print("Now you can do other things with these words:\n"+ received_text)
 
 
 
